@@ -114,7 +114,7 @@ h1 a {
   flex-wrap: wrap;
 }
 
-.CASEfonctionnement {
+.Case_Fonctionnement {
   position: relative;
   display: flex;
   justify-content: center;
@@ -131,11 +131,11 @@ h1 a {
   box-shadow: 1px 10px 15px #aaa;
 }
 
-.CASEfonctionnement:hover {
+.Case_Fonctionnement:hover {
   background-color: #9256dc3b;
 }
 
-.CASEfonctionnement p {
+.Case_Fonctionnement p {
 
   font-size: 1em;
   color: #000;
@@ -143,7 +143,7 @@ h1 a {
 
 }
 
-.CASEfonctionnement i {
+.Case_Fonctionnement i {
 
   color: #7e7e7e;
   padding-right: 30px;
@@ -152,7 +152,7 @@ h1 a {
 
 }
 
-.CASEfonctionnement i:hover {
+.Case_Fonctionnement i:hover {
 
   color: #9356dc;
 }
@@ -176,11 +176,10 @@ h1 a {
 
 /*************SECTION RESTAURANT*************/
 
-
-.bloc_restaurant {
-
+.section_restaurant{
   padding: 30px;
 }
+
 
 .cuberestaurant {
 
@@ -258,5 +257,50 @@ footer a {
 }
 
 footer i {
-  padding-right: 10px;
+  padding-right: 20px;
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .bloc_restaurant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .cuberestaurant {
+
+    width: 48%;
+   
+  }
+.footer{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer h1{
+  width: 20%;
+  padding-right: 0;
+  
+}
+.bloc_fonctionnement {
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.Case_Fonctionnement{
+  width: 30%;
+}
+.Case_Fonctionnement i {
+
+  padding-left: 25px;
+
+
+
+}
 }
