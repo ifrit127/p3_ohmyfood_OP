@@ -281,9 +281,13 @@ footer i {
   justify-content: space-between;
 }
 
+.menu_nom h1 {
+  font-weight: 500;
+}
+
 .menu_nom i {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 50;
 }
 
 .menu-categorie {
@@ -297,6 +301,14 @@ footer i {
 
 .contenu h2 {
   font-weight: 500;
+}
+
+.contenu h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  display: block;
+  background-color: #99E2D0;
 }
 
 .menu_entrees {
