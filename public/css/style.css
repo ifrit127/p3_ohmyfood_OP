@@ -14,6 +14,15 @@ html {
 
 .main__header {
   text-align: center;
+  position: relative;
+}
+
+.main__header i {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #000;
 }
 
 .maps {
@@ -74,7 +83,7 @@ h1 a {
 }
 
 .btn__about button {
-  width: 50%;
+  width: 250px;
   border: 1px transparent;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   border-radius: 30px;
