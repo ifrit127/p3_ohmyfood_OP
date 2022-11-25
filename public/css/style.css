@@ -69,6 +69,7 @@ h1 a {
 }
 
 .btn__about button:hover {
+  transform: scale(1.15);
   filter: brightness(125%);
   box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
   transition: 300ms;
@@ -83,6 +84,8 @@ h1 a {
 }
 
 .btn__about button {
+  transition: 300ms;
+  transform: scale(1);
   width: 250px;
   border: 1px transparent;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -229,7 +232,15 @@ h1 a {
 }
 
 .restaurants-contenu i {
-  font-size: 30px;
+  font-size: 35px;
+  transition: 700ms;
+}
+.restaurants-contenu i:hover {
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 /*************SECTION FOOTER*************/
@@ -265,6 +276,16 @@ footer i {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   padding: 20px;
+}
+
+.menu {
+  margin-bottom: 2.25em;
+  -webkit-animation: fadein 1s linear;
+          animation: fadein 1s linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .menu img {
