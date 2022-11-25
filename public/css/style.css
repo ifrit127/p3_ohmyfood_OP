@@ -233,7 +233,7 @@ h1 a {
 
 .restaurants-contenu i {
   font-size: 35px;
-  transition: 700ms;
+  transition: 500ms;
 }
 .restaurants-contenu i:hover {
   font-weight: 600;

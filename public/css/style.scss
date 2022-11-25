@@ -54,8 +54,6 @@ body {
   }
   
   
-  
-  
   h1 a {
     font-family: Shrikhand;
     font-weight: normal;
@@ -268,9 +266,10 @@ body {
   .restaurants-contenu i {
     
     font-size: 35px;
-    transition: 700ms;
+    transition: 500ms;
+    
         &:hover{
-            font-weight: 600;
+            font-weight:600;
             color: transparent;
             background-image: linear-gradient(to top, #9356dc, #ff79da);
             background-clip: text;
