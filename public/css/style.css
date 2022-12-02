@@ -131,12 +131,15 @@ h1 a {
   box-shadow: 1px 10px 15px #aaa;
 }
 
-.Case_Fonctionnement:hover {
+.Case_Fonctionnement:active {
   background-color: rgba(146, 86, 220, 0.231372549);
 }
 
-.Case_Fonctionnement i:hover {
+.Case_Fonctionnement i:active {
   color: #9356dc;
+}
+.Case_Fonctionnement i:active .Case_Fonctionnement:active {
+  background-color: rgba(146, 86, 220, 0.231372549);
 }
 
 .Case_Fonctionnement p {
@@ -231,11 +234,11 @@ h1 a {
   color: #000;
 }
 
-.restaurants-contenu i {
+.restaurants-contenu i, .menu_nom i {
   font-size: 35px;
   transition: 500ms;
 }
-.restaurants-contenu i:hover {
+.restaurants-contenu i:active, .menu_nom i:active {
   font-weight: 600;
   color: transparent;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -271,21 +274,53 @@ footer i {
 }
 
 /*************SECTION MENU*************/
+@-webkit-keyframes apparition {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px, -60px);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px, -60px);
+    opacity: 1;
+  }
+}
 .contenu {
   transform: translate(0px, -60px);
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   padding: 20px;
-}
-
-.menu {
-  margin-bottom: 2.25em;
-  -webkit-animation: fadein 1s linear;
-          animation: fadein 1s linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: slide 1s ease-in;
+  animation: slide 1s ease-in;
 }
 
 .menu img {
@@ -333,31 +368,89 @@ footer i {
 }
 
 .menu_entrees {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 20px;
-  padding: 15px 20px 0 10px;
   margin-bottom: 15px;
-  position: relative;
+  height: 70px;
   width: 100%;
   box-shadow: -1px 6px 10px 2px rgba(166, 166, 166, 0.34);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.delay {
+  -webkit-animation: apparition 1s ease-in;
+  animation: apparition 1s ease-in;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .menu_carte {
   width: 100%;
+  overflow: hidden;
+  padding: 15px;
 }
 
 .menu_carte_titre h3 {
   margin: 0;
 }
 
-.menu_prix {
+.menu_info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.menu_info p {
+  margin: 0;
+  overflow: hidden;
+}
+
 .menu_boutton {
   margin-bottom: 4em;
+}
+
+.menu_check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 0;
+  background-color: #99E2D0;
+  font-size: 25px;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
+  transition-duration: 0.6s;
+}
+
+.menu_entrees:active .menu_check {
+  width: 80px;
+}
+
+.menu_check i {
+  transform: rotate(-360deg);
+  transition-duration: 0.5s;
+}
+
+.menu_entrees:active .menu_check i {
+  transform: rotate(0);
 }
 
 /*************VERSION TABLETTE/DESKTOP*************/
