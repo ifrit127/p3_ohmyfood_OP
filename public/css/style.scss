@@ -31,8 +31,6 @@ html {
 
 }
 
-
-
 .maps {
   background: #eaeaea;
   display: flex;
@@ -148,16 +146,12 @@ h1 a {
   box-shadow: 1px 10px 15px #aaa;
 }
 
-.Case_Fonctionnement:active {
+.Case_Fonctionnement:hover {
   background-color: #9256dc3b;
-}
 
-.Case_Fonctionnement i:active {
-
+i{
   color: #9356dc;
-  .Case_Fonctionnement:active {
-    background-color: #9256dc3b;
-  }
+}
 }
 
 .Case_Fonctionnement p {
@@ -267,7 +261,7 @@ h1 a {
   font-size: 35px;
   transition: 500ms;
 
-  &:active {
+  &:hover {
     font-weight: 600;
     color: transparent;
     background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -398,8 +392,6 @@ justify-content: space-between;
   width: 100%;
   box-shadow: -1px 6px 10px 2px rgba(166, 166, 166, 0.34);
   animation-fill-mode: backwards;
-  
-  
 }
 
 .delay{
@@ -470,15 +462,18 @@ justify-content: space-between;
   transition-duration: 0.6s;
   
 }
+.menu_entrees:hover{
+  cursor: pointer;
+}
 
-.menu_entrees:active .menu_check {
+.menu_entrees:hover .menu_check {
   width: 80px;
 }
 .menu_check i {
   transform: rotate(-360deg);
   transition-duration: 0.5s;
 }
-.menu_entrees:active .menu_check i {
+.menu_entrees:hover .menu_check i {
   transform: rotate(0);
 }
 /*************VERSION TABLETTE/DESKTOP*************/
