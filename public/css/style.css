@@ -406,6 +406,9 @@ footer i {
 
 .menu_carte_titre h3 {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu_info {
@@ -416,7 +419,9 @@ footer i {
 
 .menu_info p {
   margin: 0;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu_boutton {

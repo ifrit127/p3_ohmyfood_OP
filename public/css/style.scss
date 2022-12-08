@@ -430,6 +430,9 @@ justify-content: space-between;
 .menu_carte_titre h3 {
 
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space : nowrap;
 }
 
 .menu_info {
@@ -440,7 +443,9 @@ justify-content: space-between;
 }
   .menu_info p{
     margin: 0;
+    text-overflow: ellipsis;
     overflow: hidden;
+    white-space : nowrap;
   }
 
 .menu_boutton {
