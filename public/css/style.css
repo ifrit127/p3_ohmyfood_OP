@@ -131,15 +131,11 @@ h1 a {
   box-shadow: 1px 10px 15px #aaa;
 }
 
-.Case_Fonctionnement:active {
+.Case_Fonctionnement:hover {
   background-color: rgba(146, 86, 220, 0.231372549);
 }
-
-.Case_Fonctionnement i:active {
+.Case_Fonctionnement:hover i {
   color: #9356dc;
-}
-.Case_Fonctionnement i:active .Case_Fonctionnement:active {
-  background-color: rgba(146, 86, 220, 0.231372549);
 }
 
 .Case_Fonctionnement p {
@@ -238,7 +234,7 @@ h1 a {
   font-size: 35px;
   transition: 500ms;
 }
-.restaurants-contenu i:active, .menu_nom i:active {
+.restaurants-contenu i:hover, .menu_nom i:hover {
   font-weight: 600;
   color: transparent;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
@@ -440,7 +436,11 @@ footer i {
   transition-duration: 0.6s;
 }
 
-.menu_entrees:active .menu_check {
+.menu_entrees:hover {
+  cursor: pointer;
+}
+
+.menu_entrees:hover .menu_check {
   width: 80px;
 }
 
@@ -449,7 +449,7 @@ footer i {
   transition-duration: 0.5s;
 }
 
-.menu_entrees:active .menu_check i {
+.menu_entrees:hover .menu_check i {
   transform: rotate(0);
 }
 
