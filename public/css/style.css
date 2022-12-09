@@ -250,7 +250,6 @@ h1 a {
 /******************SECTION FONCTIONNEMENT*******************/
 .section_fonctionnement {
   padding: 30px;
-  margin-top: 50px;
 }
 
 .section_fonctionnement h2 {
@@ -402,6 +401,7 @@ h1 a {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  margin-top: 50px;
 }
 
 .footer h1 {
