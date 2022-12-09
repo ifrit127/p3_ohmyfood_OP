@@ -450,7 +450,7 @@ footer i {
     opacity: 0;
   }
   100% {
-    transform: translateY(0px, -60px);
+    transform: translateY(-60px);
     opacity: 1;
   }
 }
@@ -460,7 +460,7 @@ footer i {
     opacity: 0;
   }
   100% {
-    transform: translateY(0px, -60px);
+    transform: translateY(-60px);
     opacity: 1;
   }
 }
